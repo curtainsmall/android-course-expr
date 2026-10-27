@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Expr1</string>
+
+    <!-- 启动页 -->
+    <string name="splash_slogan">表达式计算 · 实验一</string>
+
+    <!-- 登录页 -->
+    <string name="login_title">用户登录</string>
+    <string name="login_username_hint">用户名</string>
+    <string name="login_password_hint">密码</string>
+    <string name="login_confirm">确认</string>
+    <string name="login_cancel">取消</string>
+    <string name="login_error_empty">请输入用户名和密码</string>
+    <string name="login_error_invalid">用户名或密码错误，请重新输入</string>
+    <string name="login_error_locked">连续输错 3 次，程序退出</string>
+    <string name="login_default_account">默认账号：admin / 123456</string>
+
+    <!-- 主页面底部导航 -->
+    <string name="nav_home">主页</string>
+    <string name="nav_workbench">工作台</string>
+    <string name="nav_profile">用户</string>
+
+    <!-- 三个 Fragment 的内容 -->
+    <string name="home_title">主页</string>
+    <string name="home_desc">这里是主页 Fragment（HomeFragment）</string>
+    <string name="workbench_title">工作台</string>
+    <string name="workbench_desc">这里是工作台 Fragment（WorkbenchFragment）</string>
+    <string name="profile_title">用户</string>
+    <string name="profile_desc">这里是用户 Fragment（ProfileFragment）</string>
+</resources>
