@@ -1,13 +1,33 @@
-*.iml
-.gradle
-/local.properties
+# ============================================================================
+# 全仓库唯一的 .gitignore（仓库根）
+# 仓库根只放各级实验目录（Expr1/、Expr2/ …）；下面每条规则都在任意深度生效，
+# 新增实验时不必再往子目录里补 .gitignore。
+# ============================================================================
+
+# ---------- Android / Gradle 构建产物 ----------
+# 无前导斜杠：任意深度的 build/ 都忽略，
+# 一条规则同时覆盖 Expr1/build 与 Expr1/app/build
+build/
+.gradle/
+.cxx/
+.externalNativeBuild/
+.kotlin/
+captures/
+
+# ---------- 本机配置（含 sdk.dir 绝对路径，禁止入库） ----------
 local.properties
-/.idea/
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
-.kotlin
+
+# ---------- IDE / 编辑器 ----------
+.idea/
+.vscode/
+.fleet/
+*.iml
 *.hprof
+
+# ---------- 操作系统 ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- 杂项 ----------
 *.log

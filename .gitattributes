@@ -1,3 +1,9 @@
+# ============================================================================
+# 全仓库唯一的 .gitattributes（仓库根）
+# 规则对「本文件所在目录及其子目录」生效；含斜杠的模式相对仓库根解析，
+# 所以跨实验目录时必须加 **/ 前缀（见文末 gradle-wrapper.jar）。
+# ============================================================================
+
 # 统一换行符：仓库内一律 LF，避免 Windows / Linux 协作时整文件 diff
 * text=auto
 .gitignore       text eol=lf
@@ -39,5 +45,7 @@ gradlew.bat      text eol=crlf
 *.mp3            binary
 *.mp4            binary
 
-# Gradle wrapper 的 jar 不参与 diff
-gradle/wrapper/gradle-wrapper.jar binary
+# Gradle wrapper 的 jar 不参与 diff。
+# 含斜杠的模式相对仓库根，必须写 **/ 才能命中 Expr1/gradle/wrapper/…
+# （上面的 *.jar binary 已可兜底，此行只是显式标注）
+**/gradle/wrapper/gradle-wrapper.jar binary
