@@ -12,17 +12,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Expr2">
 
-        <!-- 主页面：实验二入口，后续界面在这里扩展 -->
+        <!-- 启动页：读取 SharedPreferences 中的登录状态，决定进入登录页还是主页面 -->
         <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:windowSoftInputMode="adjustResize">
+            android:name=".SplashActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- 登录 / 注册页：账号密码保存在 SharedPreferences -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- 主页面：底部导航（任务 / 日历 / 我的） -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- 任务新建 / 编辑页 -->
+        <activity
+            android:name=".TaskEditActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>

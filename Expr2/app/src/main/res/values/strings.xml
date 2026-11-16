@@ -1,6 +1,100 @@
 <resources>
     <string name="app_name">Expr2</string>
 
-    <!-- 主页面占位文案 -->
-    <string name="main_placeholder">Hello World!</string>
+    <!-- 启动页 -->
+    <string name="splash_slogan">待办清单 · 实验二</string>
+
+    <!-- 登录 / 注册 -->
+    <string name="login_title_login">用户登录</string>
+    <string name="login_title_register">创建账号</string>
+    <string name="login_username_hint">用户名</string>
+    <string name="login_password_hint">密码</string>
+    <string name="login_confirm_hint">确认密码</string>
+    <string name="login_action_login">登录</string>
+    <string name="login_action_register">注册</string>
+    <string name="login_reset">重置账号</string>
+    <string name="login_first_hint">首次使用，请设置用户名和密码</string>
+    <string name="login_saved_hint">账号保存在本机 SharedPreferences 中</string>
+    <string name="error_username_empty">请输入用户名</string>
+    <string name="error_password_empty">请输入密码</string>
+    <string name="error_password_short">密码至少 4 位</string>
+    <string name="error_password_mismatch">两次输入的密码不一致</string>
+    <string name="error_password_wrong">密码错误，请重新输入</string>
+    <string name="error_user_changed">用户名与已保存的账号不一致</string>
+    <string name="login_success">登录成功</string>
+    <string name="register_success">账号创建成功</string>
+    <string name="reset_title">重置账号</string>
+    <string name="reset_message">将清除本机保存的账号信息，确定继续？</string>
+    <string name="reset_done">账号已重置</string>
+
+    <!-- 底部导航 -->
+    <string name="nav_tasks">任务</string>
+    <string name="nav_calendar">日历</string>
+    <string name="nav_profile">我的</string>
+
+    <!-- 任务列表 -->
+    <string name="tasks_title">我的任务</string>
+    <string name="tasks_sort_time">按时间</string>
+    <string name="tasks_sort_category">按类别</string>
+    <string name="tasks_empty">还没有任务\n点右下角 + 新建一个</string>
+    <string name="tasks_count_format">共 %1$d 项，待完成 %2$d 项</string>
+    <string name="tasks_category_header_format">%1$s · %2$d</string>
+
+    <!-- 任务编辑 -->
+    <string name="task_new">新建任务</string>
+    <string name="task_edit">编辑任务</string>
+    <string name="task_save">保存</string>
+    <string name="task_delete">删除任务</string>
+    <string name="task_delete_confirm">确定删除这个任务？</string>
+    <string name="task_title_hint">任务标题</string>
+    <string name="task_content_hint">任务内容（可选）</string>
+    <string name="task_category_hint">任务类别，例如：学习</string>
+    <string name="task_category_label">类别</string>
+    <string name="task_status_label">状态</string>
+    <string name="task_time_label">时间</string>
+    <string name="task_title_required">请填写任务标题</string>
+    <string name="task_saved">已保存</string>
+    <string name="task_deleted">已删除</string>
+    <string name="task_not_found">任务不存在</string>
+
+    <!-- 状态 -->
+    <string name="status_todo">待办</string>
+    <string name="status_doing">进行中</string>
+    <string name="status_done">已完成</string>
+
+    <!-- 预设类别 -->
+    <string name="category_study">学习</string>
+    <string name="category_work">工作</string>
+    <string name="category_life">生活</string>
+    <string name="category_other">其他</string>
+    <string name="category_default">其他</string>
+
+    <!-- 日历 -->
+    <string name="calendar_month">月</string>
+    <string name="calendar_week">周</string>
+    <string name="calendar_prev">上一页</string>
+    <string name="calendar_next">下一页</string>
+    <string name="calendar_empty">当天没有任务</string>
+    <string name="chevron_left">‹</string>
+    <string name="chevron_right">›</string>
+    <string name="calendar_day_format">%1$s · %2$d 个任务</string>
+    <string name="calendar_month_format">%1$d年%2$d月</string>
+    <string name="calendar_week_format">%1$d年%2$d月%3$d日 起这一周</string>
+
+    <!-- 星期 -->
+    <string name="weekday_sun">日</string>
+    <string name="weekday_mon">一</string>
+    <string name="weekday_tue">二</string>
+    <string name="weekday_wed">三</string>
+    <string name="weekday_thu">四</string>
+    <string name="weekday_fri">五</string>
+    <string name="weekday_sat">六</string>
+
+    <!-- 我的 -->
+    <string name="profile_greeting">当前账号</string>
+    <string name="profile_stat_total">全部</string>
+    <string name="profile_stat_pending">待完成</string>
+    <string name="profile_stat_done">已完成</string>
+    <string name="profile_logout">退出登录</string>
+    <string name="profile_hint">账号信息保存在 SharedPreferences，任务数据保存在 SQLite（expr2.db）</string>
 </resources>

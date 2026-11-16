@@ -2,4 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- 任务状态 -->
+    <color name="status_todo">#FF9800</color>
+    <color name="status_doing">#2196F3</color>
+    <color name="status_done">#4CAF50</color>
+
+    <!-- 日历 -->
+    <color name="day_selected_bg">#FFD6E4FF</color>
+    <color name="day_today_stroke">#FF4A77E8</color>
+    <color name="category_bg">#33000000</color>
 </resources>
